@@ -1,0 +1,27 @@
+{
+  "name": "@jellyfish/binary-search",
+  "version": "1.0.0",
+  "description": "Binary search: Equal & closest search in sorted array.",
+  "keywords": [
+    "binary",
+    "search",
+    "closest"
+  ],
+  "license": "ISC",
+  "author": {
+    "name": "thejellyfish",
+    "email": "the@jellyfish-commuting.com>"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^25.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thejellyfish/binary-search.git"
+  }
+}
