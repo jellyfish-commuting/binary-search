@@ -15,16 +15,21 @@ or
     import { equalSearch, closestSearch } from '@jellyfish/binary-search';
 
      // Create an array [0...99]
-    const values = new Array(100).fill().map((nop, i) => i);
+    const numbers = new Array(100).fill().map((nop, i) => i);
+
+    // Create an array ['a'...'z']
+    const letters = new Array(26).fill().map((nop, i) => String.fromCharCode(97 + i));
 
     // Equal search
-    console.log(equalSearch(values, 7));  // Output 7
-    console.log(equalSearch(values, 123));  // Output -1
+    console.log(equalSearch(numbers, 7));  // Output 7
+    console.log(equalSearch(numbers, 123));  // Output -1
+    console.log(equalSearch(letters, 'h'));  // Output 7
+    console.log(equalSearch(letters, 'thejellyfish'));  // Output -1
 
     // Closest search
-    console.log(closestSearch(values, 7.2));  // Output 7
-    console.log(closestSearch(values, -1));  // Output 0
-    console.log(closestSearch(values, 1000));  // Output 99
+    console.log(closestSearch(numbers, 7.2));  // Output 7
+    console.log(closestSearch(numbers, -1));  // Output 0
+    console.log(closestSearch(numbers, 1000));  // Output 99
 
 ### Params
 
