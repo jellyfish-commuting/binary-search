@@ -6,10 +6,23 @@ function equalSearch(values, needle, params = {}) {
   const last = values.length - 1;
 
   // Init params
-  let { from: start = 0, to: end = last } = params;
+  let {
+    compare,
+    from: start = 0,
+    to: end = last,
+  } = params;
 
   // Compare callback
-  const compare = params.compare || ((a, b) => a - b);
+  if (!compare) {
+    // String ?
+    if (typeof needle === 'string' || needle instanceof String) {
+      compare = (a, b) => a.localeCompare(b);
+
+    // Default compare
+    } else {
+      compare = (a, b) => a - b;
+    }
+  }
 
   // Outbounds ?
   if (start < 0 || end > last) {
