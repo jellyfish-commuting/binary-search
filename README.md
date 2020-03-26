@@ -1,6 +1,6 @@
 # Binary search
 
-Equal or closest search in sorted array using binary search algorithm.
+Equal or closest search in sorted array using binary search algorithm.   
 See https://en.wikipedia.org/wiki/Binary_search_algorithm#Procedure
 
 ### Install
