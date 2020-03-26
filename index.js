@@ -12,16 +12,12 @@ function equalSearch(values, needle, params = {}) {
     to: end = last,
   } = params;
 
-  // Compare callback
+  // No compare callback ?
   if (!compare) {
-    // String ?
-    if (typeof needle === 'string' || needle instanceof String) {
-      compare = (a, b) => a.localeCompare(b);
-
-    // Default compare
-    } else {
-      compare = (a, b) => a - b;
-    }
+    // Set default compare function
+    compare = typeof needle === 'string' || needle instanceof String
+      ? (a, b) => a.localeCompare(b)
+      : (a, b) => a - b;
   }
 
   // Outbounds ?
