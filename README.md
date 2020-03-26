@@ -1,40 +1,49 @@
 # Binary search
 
 Equal or closest search in sorted array using binary search algorithm.
+See https://en.wikipedia.org/wiki/Binary_search_algorithm#Procedure
 
 ### Install
 
-    yarn add @jellyfish/binary-search
+```bash
+yarn add @thejellyfish/binary-search
+```
 
 or
 
-    npm install @jellyfish/binary-search
+```bash
+npm install @thejellyfish/binary-search
+```
 
 ### Usage
 
-    import { equalSearch, closestSearch } from '@jellyfish/binary-search';
+```javascript
+import { equalSearch, closestSearch } from '@thejellyfish/binary-search';
 
-     // Create an array [0...99]
-    const numbers = new Array(100).fill().map((nop, i) => i);
+ // Create an array [0...99]
+const numbers = new Array(100).fill().map((nop, i) => i);
 
-    // Create an array ['a'...'z']
-    const letters = new Array(26).fill().map((nop, i) => String.fromCharCode(97 + i));
+// Create an array ['a'...'z']
+const letters = new Array(26).fill().map((nop, i) => String.fromCharCode(97 + i));
 
-    // Equal search
-    console.log(equalSearch(numbers, 7));  // Output 7
-    console.log(equalSearch(numbers, 123));  // Output -1
-    console.log(equalSearch(letters, 'h'));  // Output 7
-    console.log(equalSearch(letters, 'thejellyfish'));  // Output -1
+// Equal search
+console.log(equalSearch(numbers, 7));  // Output 7
+console.log(equalSearch(numbers, 123));  // Output -1
+console.log(equalSearch(letters, 'thejellyfish'));  // Output -1
+console.log(equalSearch(letters, 'h'));  // Output 7
 
-    // Closest search
-    console.log(closestSearch(numbers, 7.2));  // Output 7
-    console.log(closestSearch(numbers, -1));  // Output 0
-    console.log(closestSearch(numbers, 1000));  // Output 99
+// Closest search
+console.log(closestSearch(numbers, 7.2));  // Output 7
+console.log(closestSearch(numbers, -1));  // Output 0
+console.log(closestSearch(numbers, 1000));  // Output 99
+```
 
 ### Params
 
-    equalSearch(haystack, needle[, { compare, from, to }]);
-    closestSearch(haystack, needle[, { compare, from, to }]);
+```javascript
+equalSearch(haystack, needle[, { compare, from, to }]);
+closestSearch(haystack, needle[, { compare, from, to }]);
+```
 
 | Prop | Type | Default | Note |
 |---|---|---|---|
