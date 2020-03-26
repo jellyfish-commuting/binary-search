@@ -12,17 +12,17 @@ function equalSearch(values, needle, params = {}) {
     to: end = last,
   } = params;
 
+  // Outbounds ?
+  if (start < 0 || end > last) {
+    throw new RangeError('Range inferior and/or superior than array length');
+  }
+
   // No compare callback ?
   if (!compare) {
     // Set default compare function
     compare = typeof needle === 'string' || needle instanceof String
       ? (a, b) => a.localeCompare(b)
       : (a, b) => a - b;
-  }
-
-  // Outbounds ?
-  if (start < 0 || end > last) {
-    throw new RangeError('Range inferior and/or superior than array length');
   }
 
   // Do search ...
@@ -112,8 +112,8 @@ function closestSearch(values, needle, params = {}) {
     }
   }
 
-  // Over ?
-  if (start > 0) {
+  // Over
+  if (start > (params.to || last)) {
     return params.to || last;
   }
 
