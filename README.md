@@ -29,8 +29,8 @@ const letters = new Array(26).fill().map((nop, i) => String.fromCharCode(97 + i)
 // Equal search
 console.log(equalSearch(numbers, 7));  // Output 7
 console.log(equalSearch(numbers, 123));  // Output -1
-console.log(equalSearch(letters, 'thejellyfish'));  // Output -1
 console.log(equalSearch(letters, 'h'));  // Output 7
+console.log(equalSearch(letters, 'jellyfish'));  // Output -1
 
 // Closest search
 console.log(closestSearch(numbers, 7.2));  // Output 7
