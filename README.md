@@ -55,4 +55,4 @@ closestSearch(haystack, needle[, { compare, from, to }]);
 
 ### Return value
 
-Index in the array if found or -1 if not found
+Index in the array or -1 if not found
