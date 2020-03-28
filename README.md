@@ -29,8 +29,8 @@ const letters = new Array(26).fill().map((nop, i) => String.fromCharCode(97 + i)
 // Equal search
 console.log(equalSearch(numbers, 7));  // Output 7
 console.log(equalSearch(numbers, 123));  // Output -1
-console.log(equalSearch(letters, 'thejellyfish'));  // Output -1
 console.log(equalSearch(letters, 'h'));  // Output 7
+console.log(equalSearch(letters, 'jellyfish'));  // Output -1
 
 // Closest search
 console.log(closestSearch(numbers, 7.2));  // Output 7
@@ -51,3 +51,8 @@ closestSearch(haystack, needle[, { compare, from, to }]);
 | `compare` | `function` | `(needle, value) => needle - value` | Compare function. <br /><em>Special case for equalSearch:</em><br />if needle is a string, default compare is<br />`(a, b) => a.localeCompare(b)`
 | `from`    | `integer`  | `0`                                 | Start index for range searching
 | `to`      | `integer`  | `values.length - 1`                 | End index for range searching
+
+
+### Return value
+
+Index in the array or -1 if not found
