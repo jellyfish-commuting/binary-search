@@ -10,7 +10,7 @@ describe('Equal search', () => {
   it('expect 7 when searching 7 in [0...99]', () => expect(equalSearch(numbers, 7)).toBe(7));
   it('expect -1 when searching \'thejellyfish\' in [\'a\'...\'z\']', () => expect(equalSearch(letters, 'thejellyfish')).toBe(-1));
   it('expect 7 when searching \'h\' in [\'a\'...\'z\']', () => expect(equalSearch(letters, 'h')).toBe(7));
-  it('expect error when outbounds range', () => expect(() => equalSearch(numbers, 7, { to: 101 })).toThrow(RangeError));
+  it('expect -1 when outbounds range', () => expect(equalSearch(numbers, 7, { to: 101 })).toBe(-1));
 });
 
 describe('Closest search', () => {
@@ -20,5 +20,5 @@ describe('Closest search', () => {
   it('expect 7 when searching 7.4 in [0...99]', () => expect(closestSearch(numbers, 7.4)).toBe(7));
   it('expect 77 when searching 77 in [0...99]', () => expect(closestSearch(numbers, 77)).toBe(77));
   it('expect 77 when searching 77.4 in [0...99]', () => expect(closestSearch(numbers, 77.4)).toBe(77));
-  it('expect error when outbounds range', () => expect(() => closestSearch(numbers, 7, { to: 101 })).toThrow(RangeError));
+  it('expect -1 when outbounds range', () => expect(closestSearch(numbers, 7, { to: 101 })).toBe(-1));
 });

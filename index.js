@@ -14,7 +14,7 @@ function equalSearch(values, needle, params = {}) {
 
   // Outbounds ?
   if (start < 0 || end > last) {
-    throw new RangeError('Range inferior and/or superior than array length');
+    return -1;
   }
 
   // No compare callback ?
@@ -66,7 +66,7 @@ function closestSearch(values, needle, params = {}) {
 
   // Outbounds ?
   if (start < 0 || end > last) {
-    throw new RangeError('Range inferior and/or superior than array length');
+    return -1;
   }
 
   // Do search ...
