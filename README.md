@@ -3,7 +3,7 @@
 Equal or closest search in sorted array using binary search algorithm.   
 See https://en.wikipedia.org/wiki/Binary_search_algorithm#Procedure
 
-### Performance
+### Performance
 
 Binary search is faster than linear search (except for small array ...).
 
