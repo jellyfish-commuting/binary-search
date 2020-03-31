@@ -7,7 +7,14 @@ See https://en.wikipedia.org/wiki/Binary_search_algorithm#Procedure
 
 Binary search is faster than linear search (except for small array ...).
 
-![js-bench](https://github.com/thejellyfish/binary-search/raw/master/js-bench.jpg)
+```javascript
+// Array [0...999]
+const haystack = new Array(1000).fill().map((nop, i) => i);
+
+// 500 random needles
+const needles = new Array(500).fill().map(() => Math.floor(Math.random() * 1000));
+```
+![js-bench](https://github.com/thejellyfish/binary-search/raw/master/js-perf.jpg)
  
 ### Install
 
