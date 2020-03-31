@@ -8,7 +8,7 @@ See https://en.wikipedia.org/wiki/Binary_search_algorithm#Procedure
 Binary search is faster than linear search (except for small array ...).
 
 ![js-bench](https://github.com/thejellyfish/binary-search/raw/master/js-bench.jpg)
-
+ 
 ### Install
 
 ```bash
