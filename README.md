@@ -9,12 +9,6 @@ Binary search is faster than linear search (except for small array ...).
 
 ![js-bench](https://github.com/thejellyfish/binary-search/raw/master/js-perf.jpg)
 
-_used in perf test_
-```javascript
-const haystack = new Array(1000).fill().map((nop, i) => i);
-const needles = new Array(500).fill().map(() => Math.floor(Math.random() * 1000));
-```
-
 ### Install
 
 ```bash
