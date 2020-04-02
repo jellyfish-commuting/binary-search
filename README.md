@@ -12,19 +12,19 @@ Binary search is faster than linear search (except for small array ...).
 ### Install
 
 ```bash
-yarn add @thejellyfish/binary-search
+yarn add @jellyfish/binary-search
 ```
 
 or
 
 ```bash
-npm install @thejellyfish/binary-search
+npm install @jellyfish/binary-search
 ```
 
 ### Usage
 
 ```javascript
-import { equalSearch, closestSearch } from '@thejellyfish/binary-search';
+import { equalSearch, closestSearch } from '@jellyfish/binary-search';
 
  // Create an array [0...99]
 const numbers = new Array(100).fill().map((nop, i) => i);
