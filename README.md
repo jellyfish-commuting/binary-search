@@ -38,7 +38,7 @@ equalSearch(numbers, 123); // Not found -> Output -1
 
 // Equal search in string array
 equalSearch(letters, 'h');         // Found -> Output 7
-equalSearch(letters, 'jellyfish'); // Found -> Output -1
+equalSearch(letters, 'jellyfish'); // Not found -> Output -1
 
 // Closest search
 closestSearch(numbers, 7.2);  // Output 7
