@@ -32,16 +32,18 @@ const numbers = new Array(100).fill().map((nop, i) => i);
 // Create an array ['a'...'z']
 const letters = new Array(26).fill().map((nop, i) => String.fromCharCode(97 + i));
 
-// Equal search
-console.log(equalSearch(numbers, 7));  // Output 7
-console.log(equalSearch(numbers, 123));  // Output -1
-console.log(equalSearch(letters, 'h'));  // Output 7
-console.log(equalSearch(letters, 'jellyfish'));  // Output -1
+// Equal search in numeric array
+console.log(equalSearch(numbers, 7));   // Found -> Output 7
+console.log(equalSearch(numbers, 123)); // Not found -> Output -1
+
+// Equal search in string array
+console.log(equalSearch(letters, 'h'));         // Found -> Output 7
+console.log(equalSearch(letters, 'jellyfish')); // Found -> Output -1
 
 // Closest search
 console.log(closestSearch(numbers, 7.2));  // Output 7
-console.log(closestSearch(numbers, -1));  // Output 0
-console.log(closestSearch(numbers, 1000));  // Output 99
+console.log(closestSearch(numbers, -1));   // Output 0
+console.log(closestSearch(numbers, 1000)); // Output 99
 ```
 
 ### Params
