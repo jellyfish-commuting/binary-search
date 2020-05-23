@@ -64,3 +64,7 @@ closestSearch(haystack, needle[, { compare, from, to }]);
 ### Return value
 
 Index in the array or -1 if not found
+
+### Exception
+
+Throw RangerError if `from` or `to` are outbounds   
