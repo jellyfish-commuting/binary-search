@@ -12,19 +12,19 @@ Binary search is faster than linear search (except for small array ...).
 ### Install
 
 ```bash
-yarn add @thejellyfish/binary-search
+yarn add @jellyfish/binary-search
 ```
 
 or
 
 ```bash
-npm install @thejellyfish/binary-search
+npm install @jellyfish/binary-search
 ```
 
 ### Usage
 
 ```javascript
-import { equalSearch, closestSearch } from '@thejellyfish/binary-search';
+import { equalSearch, closestSearch } from '@jellyfish/binary-search';
 
  // Create an array [0...99]
 const numbers = new Array(100).fill().map((nop, i) => i);
@@ -32,16 +32,18 @@ const numbers = new Array(100).fill().map((nop, i) => i);
 // Create an array ['a'...'z']
 const letters = new Array(26).fill().map((nop, i) => String.fromCharCode(97 + i));
 
-// Equal search
-console.log(equalSearch(numbers, 7));  // Output 7
-console.log(equalSearch(numbers, 123));  // Output -1
-console.log(equalSearch(letters, 'h'));  // Output 7
-console.log(equalSearch(letters, 'jellyfish'));  // Output -1
+// Equal search in numeric array
+equalSearch(numbers, 7);   // Found -> Output 7
+equalSearch(numbers, 123); // Not found -> Output -1
+
+// Equal search in string array
+equalSearch(letters, 'h');         // Found -> Output 7
+equalSearch(letters, 'jellyfish'); // Not found -> Output -1
 
 // Closest search
-console.log(closestSearch(numbers, 7.2));  // Output 7
-console.log(closestSearch(numbers, -1));  // Output 0
-console.log(closestSearch(numbers, 1000));  // Output 99
+closestSearch(numbers, 7.2);  // Output 7
+closestSearch(numbers, -1);   // Output 0
+closestSearch(numbers, 1000); // Output 99
 ```
 
 ### Params
@@ -53,7 +55,7 @@ closestSearch(haystack, needle[, { compare, from, to }]);
 
 
 | Prop      | Type       | Default                             | Note |
-|-----------|------------|-------------------------------------|------|
+|:-----------|:------------|:-------------------------------------|:------|
 | `compare` | `function` | `(needle, value) => needle - value` | Compare function. <br /><em>Special case for equalSearch:</em><br />if needle is a string, default compare is<br />`(a, b) => a.localeCompare(b)`
 | `from`    | `integer`  | `0`                                 | Start index for range searching
 | `to`      | `integer`  | `haystack.length - 1`               | End index for range searching
