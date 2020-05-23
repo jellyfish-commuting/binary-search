@@ -1,6 +1,6 @@
 {
-  "name": "@jellyfish/binary-search",
-  "version": "1.0.0",
+  "name": "@thejellyfish/binary-search",
+  "version": "1.0.1",
   "description": "Binary search: Equal & closest search in sorted array.",
   "keywords": [
     "binary",
@@ -8,10 +8,7 @@
     "closest"
   ],
   "license": "ISC",
-  "author": {
-    "name": "thejellyfish",
-    "email": "the@jellyfish-commuting.com>"
-  },
+  "author": "thejellyfish <the@jellyfish-commuting.com>",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -23,5 +20,9 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/thejellyfish/binary-search.git"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/thejellyfish/binary-search/issues"
+  },
+  "homepage": "https://github.com/thejellyfish/binary-search#readme"
 }
