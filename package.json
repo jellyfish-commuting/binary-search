@@ -1,6 +1,6 @@
 {
   "name": "@thejellyfish/binary-search",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Binary search: Equal & closest search in sorted array.",
   "keywords": [
     "binary",
