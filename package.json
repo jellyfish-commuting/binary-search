@@ -11,10 +11,12 @@
   "author": "thejellyfish <the@jellyfish-commuting.com>",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "coverage": "codecov"
   },
   "dependencies": {},
   "devDependencies": {
+    "codecov": "^3.7.0",
     "jest": "^25.2.0"
   },
   "repository": {
@@ -24,5 +26,18 @@
   "bugs": {
     "url": "https://github.com/thejellyfish/binary-search/issues"
   },
-  "homepage": "https://github.com/thejellyfish/binary-search#readme"
+  "homepage": "https://github.com/thejellyfish/binary-search#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text-summary"
+    ]
+  }
 }
