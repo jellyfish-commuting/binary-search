@@ -1,3 +1,9 @@
+![Version](https://img.shields.io/npm/v/@thejellyfish/binary-search)
+![Licence](https://img.shields.io/npm/l/@thejellyfish/binary-search)
+![Build](https://img.shields.io/travis/thejellyfish/binary-search)
+![Coverage](https://img.shields.io/codecov/c/github/thejellyfish/binary-search)
+![Downloads](https://img.shields.io/npm/dt/@thejellyfish/binary-search)
+
 # Binary search
 
 Equal or closest search in **sorted array** using binary search algorithm.   
