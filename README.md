@@ -1,8 +1,9 @@
-![Version](https://img.shields.io/npm/v/@thejellyfish/binary-search)
-![Licence](https://img.shields.io/npm/l/@thejellyfish/binary-search)
-![Build](https://img.shields.io/travis/thejellyfish/binary-search)
-![Coverage](https://img.shields.io/codecov/c/github/thejellyfish/binary-search)
-![Downloads](https://img.shields.io/npm/dt/@thejellyfish/binary-search)
+[![Version](https://img.shields.io/npm/v/@thejellyfish/binary-search)](https://www.npmjs.com/package/@thejellyfish/binary-search)
+[![Licence](https://img.shields.io/npm/l/@thejellyfish/binary-search)](https://en.wikipedia.org/wiki/ISC_license)
+[![Build](https://img.shields.io/travis/thejellyfish/binary-search)](https://travis-ci.org/github/thejellyfish/binary-search)
+[![Coverage](https://img.shields.io/codecov/c/github/thejellyfish/binary-search)](https://codecov.io/gh/thejellyfish/binary-search)
+[![Downloads](https://img.shields.io/npm/dt/@thejellyfish/binary-search)](https://www.npmjs.com/package/@thejellyfish/binary-search)
+
 
 # Binary search
 
