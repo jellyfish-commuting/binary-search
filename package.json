@@ -1,13 +1,12 @@
 {
   "name": "@thejellyfish/binary-search",
-  "version": "1.0.2",
   "description": "Binary search: Equal & closest search in sorted array.",
   "keywords": [
     "binary",
     "search",
     "closest"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "author": "thejellyfish <the@jellyfish-commuting.com>",
   "main": "index.js",
   "scripts": {
