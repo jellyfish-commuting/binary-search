@@ -1,5 +1,5 @@
 {
-  "name": "@thejellyfish/binary-search",
+  "name": "@jellyfish-commuting/binary-search",
   "description": "Binary search: Equal & closest search in sorted array.",
   "keywords": [
     "binary",
@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/thejellyfish/binary-search.git"
+    "url": "git://github.com/jellyfish-commuting/binary-search.git"
   },
   "bugs": {
-    "url": "https://github.com/thejellyfish/binary-search/issues"
+    "url": "https://github.com/jellyfish-commuting/binary-search/issues"
   },
-  "homepage": "https://github.com/thejellyfish/binary-search#readme",
+  "homepage": "https://github.com/jellyfish-commuting/binary-search#readme",
   "publishConfig": {
     "access": "public"
   },

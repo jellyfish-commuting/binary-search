@@ -1,37 +1,37 @@
-[![Version](https://img.shields.io/npm/v/@thejellyfish/binary-search)](https://www.npmjs.com/package/@thejellyfish/binary-search)
-[![Licence](https://img.shields.io/npm/l/@thejellyfish/binary-search)](https://en.wikipedia.org/wiki/ISC_license)
-[![Build](https://img.shields.io/travis/thejellyfish/binary-search)](https://travis-ci.org/github/thejellyfish/binary-search)
-[![Coverage](https://img.shields.io/codecov/c/github/thejellyfish/binary-search)](https://codecov.io/gh/thejellyfish/binary-search)
-[![Downloads](https://img.shields.io/npm/dt/@thejellyfish/binary-search)](https://www.npmjs.com/package/@thejellyfish/binary-search)
+[![Version](https://img.shields.io/npm/v/@jellyfish-commuting/binary-search)](https://www.npmjs.com/package/@jellyfish-commuting/binary-search)
+[![Licence](https://img.shields.io/npm/l/@jellyfish-commuting/binary-search)](https://en.wikipedia.org/wiki/MIT_license)
+[![Build](https://img.shields.io/travis/jellyfish-commuting/binary-search)](https://travis-ci.org/github/jellyfish-commuting/binary-search)
+[![Coverage](https://img.shields.io/codecov/c/github/jellyfish-commuting/binary-search)](https://codecov.io/gh/jellyfish-commuting/binary-search)
+[![Downloads](https://img.shields.io/npm/dt/@jellyfish-commuting/binary-search)](https://www.npmjs.com/package/@jellyfish-commuting/binary-search)
 
 
 # Binary search
 
-Equal or closest search in **sorted array** using binary search algorithm.   
+Equal or closest search in **sorted array** using binary search algorithm.
 See https://en.wikipedia.org/wiki/Binary_search_algorithm#Procedure
 
 ### Performance
 
 Binary search is faster than linear search (except for small array ...).
 
-![js-perf](https://github.com/thejellyfish/binary-search/raw/master/js-perf.jpg)
+![js-perf](https://github.com/jellyfish-commuting/binary-search/raw/master/js-perf.jpg)
 
 ### Install
 
 ```bash
-yarn add @thejellyfish/binary-search
+yarn add @jellyfish-commuting/binary-search
 ```
 
 or
 
 ```bash
-npm install @thejellyfish/binary-search
+npm install @jellyfish-commuting/binary-search
 ```
 
 ### Usage
 
 ```javascript
-import { equalSearch, closestSearch } from '@thejellyfish/binary-search';
+import { equalSearch, closestSearch } from '@jellyfish-commuting/binary-search';
 
  // Create an array [0...99]
 const numbers = new Array(100).fill().map((nop, i) => i);
@@ -74,4 +74,4 @@ Index in the array or -1 if not found
 
 ### Exception
 
-Throw RangerError if `from` or `to` are outbounds   
+Throw RangerError if `from` or `to` are outbounds
