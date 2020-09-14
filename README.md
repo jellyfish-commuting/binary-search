@@ -49,6 +49,7 @@ equalSearch(letters, '?');   // Not found -> Output -1
 
 // Closest search
 closestSearch(numbers, 7.2);  // Output 6
+closestSearch(numbers, 7.6);  // Output 7
 closestSearch(numbers, -1);   // Output 0
 closestSearch(numbers, 1000); // Output 99
 ```
