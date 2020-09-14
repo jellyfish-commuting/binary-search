@@ -33,22 +33,22 @@ npm install @jellyfish-commuting/binary-search
 ```javascript
 import { equalSearch, closestSearch } from '@jellyfish-commuting/binary-search';
 
- // Create an array [0...99]
-const numbers = new Array(100).fill().map((nop, i) => i);
+ // Create an array [1...100]
+const numbers = new Array(100).fill().map((nop, i) => i + 1);
 
 // Create an array ['a'...'z']
 const letters = new Array(26).fill().map((nop, i) => String.fromCharCode(97 + i));
 
 // Equal search in numeric array
-equalSearch(numbers, 7);   // Found -> Output 7
+equalSearch(numbers, 7);   // Found -> Output 6
 equalSearch(numbers, 123); // Not found -> Output -1
 
 // Equal search in string array
-equalSearch(letters, 'h');         // Found -> Output 7
-equalSearch(letters, 'jellyfish'); // Not found -> Output -1
+equalSearch(letters, 'h');   // Found -> Output 7
+equalSearch(letters, '?');   // Not found -> Output -1
 
 // Closest search
-closestSearch(numbers, 7.2);  // Output 7
+closestSearch(numbers, 7.2);  // Output 6
 closestSearch(numbers, -1);   // Output 0
 closestSearch(numbers, 1000); // Output 99
 ```
