@@ -1,8 +1,8 @@
-[![Version](https://img.shields.io/npm/v/@jellyfish-commuting/binary-search)](https://www.npmjs.com/package/@jellyfish-commuting/binary-search)
-[![Licence](https://img.shields.io/npm/l/@jellyfish-commuting/binary-search)](https://en.wikipedia.org/wiki/MIT_license)
-[![Build](https://img.shields.io/travis/jellyfish-commuting/binary-search)](https://travis-ci.org/github/jellyfish-commuting/binary-search)
-[![Coverage](https://img.shields.io/codecov/c/github/jellyfish-commuting/binary-search)](https://codecov.io/gh/jellyfish-commuting/binary-search)
-[![Downloads](https://img.shields.io/npm/dt/@jellyfish-commuting/binary-search)](https://www.npmjs.com/package/@jellyfish-commuting/binary-search)
+[![Version](https://img.shields.io/npm/v/@jollie/binary-search)](https://www.npmjs.com/package/@jollie/binary-search)
+[![Licence](https://img.shields.io/npm/l/@jollie/binary-search)](https://en.wikipedia.org/wiki/MIT_license)
+[![Build](https://img.shields.io/travis/thejellyfish/binary-search)](https://travis-ci.org/github/thejellyfish/binary-search)
+[![Coverage](https://img.shields.io/codecov/c/github/thejellyfish/binary-search)](https://codecov.io/gh/thejellyfish/binary-search)
+[![Downloads](https://img.shields.io/npm/dt/@jollie/binary-search)](https://www.npmjs.com/package/@jollie/binary-search)
 
 
 # Binary search
@@ -14,24 +14,24 @@ See https://en.wikipedia.org/wiki/Binary_search_algorithm#Procedure
 
 Binary search is faster than linear search (except for small array ...).
 
-![js-perf](https://github.com/jellyfish-commuting/binary-search/raw/master/js-perf.jpg)
+![js-perf](https://github.com/thejellyfish/binary-search/raw/master/js-perf.jpg)
 
 ### Install
 
 ```bash
-yarn add @jellyfish-commuting/binary-search
+yarn add @jollie/binary-search
 ```
 
 or
 
 ```bash
-npm install @jellyfish-commuting/binary-search
+npm install @jollie/binary-search
 ```
 
 ### Usage
 
 ```javascript
-import { equalSearch, closestSearch } from '@jellyfish-commuting/binary-search';
+import { equalSearch, closestSearch } from '@jollie/binary-search';
 
  // Create an array [1...100]
 const numbers = new Array(100).fill().map((nop, i) => i + 1);
