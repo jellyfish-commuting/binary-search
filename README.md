@@ -64,6 +64,8 @@ closestSearch(haystack, needle[, { compare, from, to }]);
 
 | Prop      | Type       | Default                             | Note |
 |:-----------|:------------|:-------------------------------------|:------|
+| `haystack` | `array`  | mandatory                                 | Array of values 
+| `needle` | `any`  | mandatory                                 | Searched value
 | `compare` | `function` | `(needle, value) => needle - value` | Compare function. <br /><em>Special case for equalSearch:</em><br />if needle is a string, default compare is<br />`(a, b) => a.localeCompare(b)`
 | `from`    | `integer`  | `0`                                 | Start index for range searching
 | `to`      | `integer`  | `haystack.length - 1`               | End index for range searching
