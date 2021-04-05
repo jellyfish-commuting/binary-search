@@ -33,25 +33,19 @@ npm install @jollie/binary-search
 ```javascript
 import { equalSearch, closestSearch } from '@jollie/binary-search';
 
- // Create an array [1...100]
-const numbers = new Array(100).fill().map((nop, i) => i + 1);
-
-// Create an array ['a'...'z']
-const letters = new Array(26).fill().map((nop, i) => String.fromCharCode(97 + i));
-
 // Equal search in numeric array
-equalSearch(numbers, 7);   // Found -> Output 6
-equalSearch(numbers, 123); // Not found -> Output -1
+equalSearch([1, 2, 3], 2);   // Found -> Output 1
+equalSearch([1, 2, 3], 5);   // Not found -> Output -1
 
 // Equal search in string array
-equalSearch(letters, 'h');   // Found -> Output 7
-equalSearch(letters, '?');   // Not found -> Output -1
+equalSearch(['a', 'b', 'c'], 'c');   // Found -> Output 2
+equalSearch(['a', 'b', 'c'], '?');   // Not found -> Output -1
 
 // Closest search
-closestSearch(numbers, 7.2);  // Output 6
-closestSearch(numbers, 7.6);  // Output 7
-closestSearch(numbers, -1);   // Output 0
-closestSearch(numbers, 1000); // Output 99
+closestSearch([1, 2, 3], 2.2);  // Output 1
+closestSearch([1, 2, 3], 2.6);  // Output 2
+closestSearch([1, 2, 3], -1);   // Output 0
+closestSearch([1, 2, 3], 1000); // Output 2
 ```
 
 ### Params
